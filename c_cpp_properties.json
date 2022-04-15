@@ -2,19 +2,22 @@
     "configurations": [
         {
             "name": "Mac",
+            //输入gcc -v -E -x c++ - 查看头文件路径
             "includePath": [
                 "${workspaceFolder}/**",
-                "/Users/gyuuekihaku/dependencies/fmt/include",
-                "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include"
-                
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1",
+                "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include",
+                "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include",
+                "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
             ],
             "defines": [],
             "macFrameworkPath": [
-                "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks"
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
             ],
             "compilerPath": "/usr/local/bin/clang",
             "cStandard": "c17",
-            "cppStandard": "c++20",
+            "cppStandard": "c++17",
             "intelliSenseMode": "macos-clang-x64"
         }
     ],
